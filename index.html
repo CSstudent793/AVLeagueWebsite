@@ -1,189 +1,273 @@
 <!DOCTYPE html>
 <html>
-<link rel="icon" href="avleague.png">
-<title>AV League</title>
+<title>CDS News</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
-/* Full height image header */
-.bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url(avgroup.jpg);
-    min-height: 100%;
-}
-.w3-bar .w3-button {
-    padding: 16px;
-}
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
 </style>
-<body>
+<body class="w3-light-grey">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">AV League</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-userx"></i> Members</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-thx"></i> Videos</a>
-      <a href="#live" class="w3-bar-item w3-button"><i class="fa fa-thx"></i> AV Live</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
 </div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">AV League</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Members</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
-</nav>
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Carrollwood Times</b></h1>
+    <h6>The future of writing</h6>
+  </header>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">AV League</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">AV League Home</span><br>
-    <span class="w3-large">A CDS club producing quality content.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">What is AV League?</a></p>
-  </div> 
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="cds.jpg" alt="Main CDS" width="1600" height="1060">
+    <div class="w3-display-middle w3-padding-large">
+      <h1 class="w3-jumbo w3-text-black w3-hide-small"><b> Carrollwood Times</b></h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b> for students, by students</b></h1>
 
-</header>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">About AV League</h3>
-  <h4 class="w3-center">What does it means to be apart of the league?</h4>
-
-      
-      <p class="w3-center">Here at AV League, we take things very seriously. More more more.More more more.More more more.More more more.More more more.More more more.More more more.More more more.More more more.More more more.More more more.</p>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
     </div>
-  </div>
-</div>
+  </header>
 
-<!-- Promo Section - "We cover everything" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>We cover everything.</h3>
-      <p>AV League not only creates broadcasts, but many other things like livestreams and articles.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th">&nbsp;</i> View Our Videos</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="camera.jpg" alt="camera" width="700" height="394">
-    </div>
-  </div>
-</div>
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
 
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">Leaders</h3>
-  <p class="w3-center w3-large">The heads of AV League</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="Nisanth.jpg" alt="Nisanth" style="width:100%">
-        <div class="w3-container">
-          <h3>Nisanth Aremanda</h3>
-          <p class="w3-opacity">President</p>
-          <p>The current president of AV League.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Article 1</h3>
+          <h5>Article 1 description, <span class="w3-opacity">Date</span></h5>
+        </div>
+
+        <div class="w3-justify">
+        
+          <p><strong>Attention!</strong> Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.</p>
+          <p>SArticle here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick=""><b><i </i> Read more</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo1')" id="myBtn"><b>Comments  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Trent <span class="w3-opacity w3-medium">Date</span></h4>
+                <p>Nice article man!</p>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+      <hr>
 
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <h2>Proudly located in Mr. Spaulding's room since 2014</h2>
-</div>
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Article 2</h3>
+          <h5>Article 2 description, <span class="w3-opacity">Date</span></h5>
+        </div>
 
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">AV League Videos</h3>
-  <p class="w3-center w3-large">An updated collection of our broadcasts, films and live streams.</p>
+        <div class="w3-justify">
+          <img src="" alt="" style="width:100%" class="w3-padding-16">
+          <p>ayy!</p>
+          <p>Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick=""><b><i class=""></i> Read more</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo2')"><b>Comments  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Brodcast 1">
-    </div>
-</div>
-
-    <!-- Live Stream Section -->
-<div class="w3-container" style="padding:128px 16px" id="live">
-  <h3 class="w3-center">Live Stream</h3>
-  <p class="w3-center w3-large">Video will be active when stream is up.</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <iframe width="515" height="315" src="https://www.youtube.com/embed/6MyUMYfMYfU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <!-- Blog entry -->
       
+          
+         
+    <!-- END BLOG ENTRIES -->
     </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="" alt="" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>About us</h4>
+          <p>We write articles about cds</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">CDS Football rigged?</span>
+            <br>
+            <span>popular school team rigged a game!</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">No school on wensday!</span>
+            <br>
+            <span>Yay</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">idk</span>
+            <br>
+            <span>out of ideas</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="" alt="" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">another article</span>
+            <br>
+            <span>lol</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>School Calender</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">we could put a school calender here, a charity sponsered by the school or mabye an ad :)</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Writers and Contributers</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+           <h4>Jared Johnson</h4>
+           <h4>Trent Palumbo</h4>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Us</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified about the latest Carrollwood Times articles.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
 </div>
-    
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join our mailing list to receive updates on the latest articles and other things surrounding carrollwood day school.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
   </div>
 </div>
-
-
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-  
-<a href="https://www.youtube.com/user/TheAVLeague" target="blank_"> <i class="fa fa-youtube w3-hover-opacity"></i>
-<a href="https://twitter.com/TheAVLeague" target="blank_"> <i class="fa fa-twitter w3-hover-opacity"></i>
-  </div> 
-  <a href="https://github.com/trent793/Trent-First" target="blank_"> <p>v1.0 Created by Trent Palumbo</p>
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Created by <a href="https://github.com/trent793/Trent-First" target="_blank">Trent</a></p>
 </footer>
- 
- <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
     }
 }
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
 }
 </script>
+
 </body>
 </html>
+
