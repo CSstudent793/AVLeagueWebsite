@@ -1,270 +1,123 @@
-<!DOCTYPE html>
-<html>
-<title>AV League</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-</style>
-<body class="w3-light-grey">
+<!DOCTYPE html><html lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+	<base href="https://app.schoology.com/home"/><script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Karla:400:latin' ] }
+  };
+  (function() {
+    var h = document.getElementsByTagName('html')[0];
+    h.className += ' wf-karla-n4-loading';
+    var t = setTimeout(function() {
+      h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, ' ');
+      h.className = h.className.replace(/(\s|^)wf-karla-n4-loading(\s|$)/g, ' ');
+      h.className += ' wf-inactive';
+    }, 2000);
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="google-site-verification" content="6ystVr7sfpd20ctZGukFGunzOJQW7O6kJpXvzAxSEzI"/><meta name="google-site-verification" content="9tK81P_TYDOlOx_Me0FXzEj_nQnkL9G0kQxRcG4LT7I"/><meta name="p:domain_verify" content="d76e189f546bfd185bd2a3ec1a7f214c"/>
+	<link href="/sites/all/themes/schoology_theme/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link href="/images/schoology_thumbnail.png" rel="image_src"/>
+	<link href="/sites/all/themes/schoology_theme/css/style.css?1444671451" rel="stylesheet" type="text/css"/>
+	<link href="sites/all/themes/schoology_theme/css/thickbox.css?qrstuv" media="screen" rel="stylesheet" type="text/css"/><script type="text/javascript" src="/misc/jquery-1.10.2.min.js?1405525770"></script><script type="text/javascript" src="/misc/drupal.js?qrstuv"></script><script type="text/javascript" src="/sites/all/misc/jquery.elastic-1.6.11.js?1407513164"></script><script type="text/javascript" src="/sites/all/themes/schoology_theme/js/thickbox-compressed.js?qrstuv"></script><script type="text/javascript" src="/sites/all/themes/schoology_theme/js/modernizr-2.6.2.min.js?qrstuv"></script><script type="text/javascript" src="/sites/all/themes/schoology_theme/js/front.js?1465909725772"></script><script type="text/javascript" src="/sites/all/misc/jquery-autocomplete/jquery.autocomplete.js?qrstuv"></script><script type="text/javascript" src="/sites/all/modules/schoology_core/s_user/s_user_usernames_login.js?1532547239000"></script><!--[if lt IE 9]>
+<script>
+	document.createElement('header');
+	document.createElement('nav');
+	document.createElement('section');
+	document.createElement('article');
+	document.createElement('aside');
+	document.createElement('footer');
+	document.createElement('hgroup');
+	document.createElement('figure');
+	document.createElement('figcaption');
+</script>
+<![endif]-->
+	<link href="/sites/all/themes/schoology_theme/css/style.css?qrt" rel="stylesheet" type="text/css"/>
+	<link href="/sites/all/themes/schoology_theme/css/login.css?qrt" rel="stylesheet" type="text/css"/>
+	<link href="/sites/all/themes/schoology_theme/css/rebranded.css?qrt" rel="stylesheet" type="text/css"/>
+	<title>Login to Schoology</title>
+	<meta name="description" content="Schoology allows instructors, students and administrators to create a meaningful virtual classroom and extend learning beyond the boundaries of the physical classroom"/><!-- a version of inc_header_bottom_sub without marketing material  -->
+</head>
+<body class="proxima login-page accessibility-enhanced">
+<header class="clearfix" id="branding">
+<div class="container clearfix"><a class="ir" href="http://www.schoology.com/" id="logo"><img alt="Schoology Logo" src="/sites/all/themes/schoology_theme/images_front/header-logo-transparent.png"/> <span>Schoology</span> </a></div>
+</header>
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <a href="https://app.schoology.com/home" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+<div id="supplementary">
+<div class="container">
+<div class="login login" id="content-container">
+<div id="main-content">
+<div id="login-container">
+<div class="login-content clearfix">
+<h3 class="sign-in-header">Sign in to Schoology</h3>
+
+<h3 class="forgot-header">Forgot Password</h3>
+
+<form accept-charset="UTF-8" action="" id="s-user-login-form" method="post" role="form"><input name="__original_url" type="hidden" value="https://app.schoology.com/home/login?destination=home"/>
+<div>
+<div class="form-item"><span class="required-text-label" role="text" tabindex="0">All fields are required</span></div>
+
+<div class="form-item " id="edit-mail-wrapper"><label for="edit-mail">Email or Username (required): </label> <input aria-required="true" class="form-text" id="edit-mail" maxlength="128" name="mail" placeholder="Email or Username" size="60" type="text" value=""/></div>
+
+<div class="form-item " id="edit-pass-wrapper"><label for="edit-pass">Password (required): </label> <input aria-required="true" class="form-text" id="edit-pass" maxlength="128" name="password" placeholder="Password" size="60" type="password"/></div>
+
+<div class="form-item" id="edit-school-wrapper"><label class="hide" for="edit-school">Select Your School (required):</label> <input aria-required="true" autocomplete="off" class="form-text" id="edit-school" maxlength="128" name="school" placeholder="School or Postal Code " size="0" title="School or Postal Code " type="text" value=""/> <span id="clear-school-field">Clear this field</span>
+
+<div id="remember-school-wrapper"><label class="show option" for="remember-school"><input id="remember-school" name="remember-school" type="checkbox" value="remember-school"/> Remember my School</label></div>
 </div>
-  
+<input id="edit-school-nid" name="school_nid" type="hidden" value=""/>
+<div class="forgot-password"><a href="/login/forgot">Forgot your password</a></div>
 
-<div class="w3-content" style="max-width:1600px">
-
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>Carrollwood AV League</b></h1>
-    <h6>The future of audio visuals</h6>
-  </header>
-
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="cds.jpg" alt="Main CDS" width="1600" height="1060">
-    <div class="w3-display-middle w3-padding-large">
-      <h1 class="w3-jumbo w3-text-black w3-hide-small"><b> AV League</b></h1>
-      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b> for students, by students</b></h1>
-
-      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
-    </div>
-  </header>
-
-  <!-- Grid -->
-  <div class="w3-row w3-padding w3-border">
-
-    <!-- Blog entries -->
-    <div class="w3-col l8 s12">
-    
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Article 1</h3>
-          <h5>Article 1 description, <span class="w3-opacity">Date</span></h5>
-        </div>
-
-        <div class="w3-justify">
-        
-          <p><strong>Attention!</strong> Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.</p>
-          <p>SArticle here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick=""><b><i </i> Read more</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo1')" id="myBtn"><b>Comments  </b> <span class="w3-tag w3-white">1</span></button></p>
-          <p class="w3-clear"></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-            <hr>
-              <div class="w3-col l2 m3">
-                <img src="" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Trent <span class="w3-opacity w3-medium">Date</span></h4>
-                <p>Nice article man!</p>
-              </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Article 2</h3>
-          <h5>Article 2 description, <span class="w3-opacity">Date</span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <img src="" alt="" style="width:100%" class="w3-padding-16">
-          <p>ayy!</p>
-          <p>Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.Article here.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick=""><b><i class=""></i> Read more</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo2')"><b>Comments  </b> <span class="w3-tag w3-white">2</span></button></p>
-          <p class="w3-clear"></p>
-          
-          <!-- Example of comment field -->
-          <div id="demo2" style="display:none">
-            <div class="w3-row">
-              <hr>
-              <div class="w3-col l2 m3">
-                <img src="" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>That one kid <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
-                <p>Ayy good job home dog.</p><br>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Ya Boi <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
-                <p>Nice article G!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog entry -->
-      
-          
-         
-    <!-- END BLOG ENTRIES -->
-    </div>
-
-    <!-- About/Information menu -->
-    <div class="w3-col l4">
-      <!-- About Card -->
-      <div class="w3-white w3-margin">
-        <img src="" alt="" style="width:100%" class="w3-grayscale">
-        <div class="w3-container w3-black">
-          <h4>About us</h4>
-          <p>We write articles about cds</p>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Popular Posts</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-            <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">CDS Football rigged?</span>
-            <br>
-            <span>popular school team rigged a game!</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">No school on wensday!</span>
-            <br>
-            <span>Yay</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">idk</span>
-            <br>
-            <span>out of ideas</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="" alt="" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">another article</span>
-            <br>
-            <span>lol</span>
-          </li>
-        </ul>
-      </div>
-      <hr>
-
-      <!-- Advertising -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>School Calender</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
-            <span class="w3-display-middle">we could put a school calender here, a charity sponsered by the school or mabye an ad :)</span>
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Tags -->
-
-      <!-- Contributers -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Writers and Contributers</h4>
-        </div>
-        <div class="w3-row-padding w3-white">
-          <div class="w3-col s6">
-           <h4>Jared Johnson</h4>
-           <h4>Trent Palumbo</h4>
-         </div>
-        </div>
-      </div>
-      <hr>
-
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Follow Us</h4>
-        </div>
-        <div class="w3-container w3-xlarge w3-padding">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i <a href="www.google.com">class="fa fa-instagram w3-hover-opacity"></a></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-        </div>
-      </div>
-      <hr>
-      
-      <!-- Subscribe -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Subscribe</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified about the latest Carrollwood Times articles.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
-        </div>
-      </div>
-
-    <!-- END About/Intro Menu -->
-    </div>
-
-  <!-- END GRID -->
-  </div>
-
-<!-- END w3-content -->
+<div class="sso-login"><span class="sso-login-link clickable" role="link" tabindex="0">SSO Login</span><span class="regular-login-link hidden" role="link" tabindex="0">Regular Login</span></div>
+<span class="submit-span-wrapper"><input class="form-submit" id="edit-submit" name="op" type="submit" value="Log in"/> </span><input id="2f0d337-Pkos_k9h6brXaRWaWpnkZL-y8LteJCxUfLHn3-3Epbk" name="form_build_id" type="hidden" value="2f0d337-Pkos_k9h6brXaRWaWpnkZL-y8LteJCxUfLHn3-3Epbk"/> <input id="edit-s-user-login-form" name="form_id" type="hidden" value="s_user_login_form"/></div>
+</form>
 </div>
 
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join our mailing list to receive updates on the latest articles and other things surrounding carrollwood day school.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
-  </div>
+<div class="qr-code-signin-option">
+<div class="qr-code-signin-or-block"><span>or</span>
+
+<div class="rule"> </div>
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Created by <a href="https://github.com/trent793/Trent-First" target="_blank">Trent</a></p>
+<div class="scan-link-cta"><img alt="QR code being scanned" class="qr-code-scanning" src="/sites/all/themes/schoology_theme/images/qr-scan-sample.png"/> <a aria-label="Button: Scan QR Code" href="/login/qr?lang=en-US"> </a>
+
+<div class="button"><a aria-label="Button: Scan QR Code" href="/login/qr?lang=en-US"><span>Scan QR Code</span></a></div>
+<a aria-label="Button: Scan QR Code" href="/login/qr?lang=en-US"> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    // Place the cursor in the first textbox
+    $(document).ready(function(){
+      $('form input:eq(0)').focus();
+    });
+  </script><!-- a version of inc_footer without marketing material  -->
+
+<footer id="page-footer">
+<div class="container">
+<div id="copyright-and-links">Schoology © 2019 <span class="divider">·</span> <a href="https://www.schoology.com/privacy" id="footer-nav-privacy" target="_blank">Privacy Policy</a> <span class="divider">·</span> <a href="https://www.schoology.com/terms-of-use" id="footer-nav-privacy" target="_blank">Terms of Use</a> <span class="divider">·</span> <a href="https://support.schoology.com/hc/en-us" id="footer-nav-help-center" rel="external" target="_blank">Help Center</a></div>
+
+<div id="trust" style="display:none"><a href="https://www.schoology.com/privacy" id="privacy-link" target="_blank"><img alt="Privo Privacy Certified" src="https://privo.com/images/certLogos/H_PPC_B.png"/> </a> <script type="text/javascript">
+        (function () {
+          var lang = document.documentElement.lang;
+          var link = 'https://www.schoology.com/privacy';
+          if (lang === 'es') {
+            link += '/es';
+          }
+
+          var privacyLink = document.getElementById('privacy-link');
+          privacyLink.href = link;
+        })();
+      </script></div>
+</div>
 </footer>
 
-<script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-function likeFunction(x) {
-    x.style.fontWeight = "bold";
-    x.innerHTML = "✓ Liked";
-}
-</script>
 
-</body>
-</html>
+</body></html>
