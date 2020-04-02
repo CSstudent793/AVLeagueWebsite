@@ -60,6 +60,18 @@ li:last-child {
   margin-right: 12px;
   float: right;
 }
+.column {
+  float: left;
+  width: 31.7%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 </style>
@@ -86,9 +98,10 @@ li:last-child {
 
 
 <ul>
-  <li><a href="index.html">Home</a></li>
+  <li><a href="index2.html">Home</a></li>
   <li><a href="Events.html">Events</a></li>
-  <li><button type="button" onclick="color()">Day Mode</button></li>
+  <li><a href="Video.html">Videos</a></li>
+  <li><type="button" onclick="color()">Day Mode</button></li>
 </ul>
 </div>
 
@@ -100,5 +113,19 @@ document.body.style.backgroundColor= "white";
 }
 </script>
 
+<div class="row">
+  <div class="column" style="background-color:#E8E7E7;">
+    <h2>Article 1</h2>
+    <p>Text here..</p>
+  </div>
+  <div class="column" style="background-color:#DDDDDD;">
+    <h2>Article 2</h2>
+    <p>Text here..</p>
+  </div>
+  <div class="column" style="background-color:#C8C8C8;">
+    <h2>Article 3</h2>
+    <p>Text here..</p>
+  </div>
+</div>
 
 </header>
