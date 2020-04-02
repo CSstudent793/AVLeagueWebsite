@@ -61,6 +61,38 @@ li:last-child {
   float: right;
 }
 
+input[type=text] {
+  padding: 0;
+  height: 60px;
+  width: 1210px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 64px;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+}
+.container1 {
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+}
+
 
 </style>
 
@@ -68,6 +100,7 @@ li:last-child {
 <head>
 <title>The AV League</title>
 <link rel="stylesheet" type="text/css" href=“~/Desktop/CSIA/style.css“>
+
 
 
 <header id="home">
@@ -84,11 +117,11 @@ li:last-child {
   </div>
 
 
-
 <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index2.html">Home</a></li>
     <li><a href="Events.html">Events</a></li>
-    <li><button type="button" onclick="color()">Day Mode</button></li>
+    <li><a href="Video.html">Videos</a></li>
+    <li><type="button" onclick="color()">Day Mode</button></li>
   </ul>
   </div>
 
@@ -100,17 +133,21 @@ li:last-child {
   }
   </script>
 
-<label for="">Input a day(Monday-Friday):</label>
+<div class="input">
+
 <input id="day"
        type="text"
-       placeholder="Input day(Monday-Friday):">
+       placeholder="Input day (Monday-Friday)">
 
+</div>
+
+<div class="button">
 <button id="button"
         class="btn btn-success btn-lg float-right"
         type="submit">
      Submit
 </button>
-
+</div>
 
 
 
@@ -120,19 +157,27 @@ var name = document.getElementById("day");
         document.getElementById("button").addEventListener("click", function(){
             var value=day.value.trim();
             if(value == "Monday")
-              alert("AV League will be filming the morning news on Monday");
+              document.getElementById("demo").innerHTML = "AV League will be filming the morning news on Monday";
             if(value == "Tuesday")
-              alert("AV League will be filming the soccer game on Tuesday");
+              document.getElementById("demo").innerHTML = "AV League will be filming the soccer game on Tuesday";
             if(value == "Wednesday")
-              alert("AV League will be filming the basketball game on Wednesday");
+              document.getElementById("demo").innerHTML = "AV League will be filming the basketball game on Wednesday";
             if(value == "Thursday")
-              alert("AV League will be filming the football game on Thursday");
+              document.getElementById("demo").innerHTML = "AV League will be filming the football game on Thursday";
             if(value == "Friday")
-              alert("AV League will be filming the Lacross game on Friday");
+              document.getElementById("demo").innerHTML = "AV League will be filming the Lacross game on Friday";
             if(!value)
-              alert("Inncorect Spelling.");
+            document.getElementById("demo").innerHTML = "Must input a correct value.";
+
 
 
                    });
 </script>
+
 </header>
+<div class="container1">
+<p id="demo"></p>
+</div>
+<script>
+document.getElementById("demo").innerHTML = "";
+</script>
